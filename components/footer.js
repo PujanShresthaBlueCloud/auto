@@ -3,7 +3,7 @@ import React from "react";
 import Container from "./container";
 
 export default function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["Product", "Services", "Features", "Pricing", "Faq"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -14,7 +14,7 @@ export default function Footer() {
               {" "}
               <Link href="/">
                 <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                  <span>
+                  {/* <span>
                     <img
                       src="/img/logo.svg"
                       alt="N"
@@ -22,23 +22,23 @@ export default function Footer() {
                       height="32"
                       className="w-8"
                     />
-                  </span>
-                  <span>Nextly</span>
+                  </span> */}
+                  <span>Automate</span>
                 </a>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
+              The Automate text should be here as the description.
+              The Automate text should be here as the description.
+              The Automate text should be here as the description.
             </div>
           </div>
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <Link key={index} href="/">
+                <Link key={index} href="#pricing">
                   <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                     {item}
                   </a>
@@ -90,18 +90,11 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
+          Copyright © {new Date().getFullYear()}. Automate
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }
