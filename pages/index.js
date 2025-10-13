@@ -46,13 +46,16 @@ export default function Home() {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
-        pretitle=""
-        title="Pricing Plans"
-        id="pricing">
-        Choose the plan that fits your needs
-      </SectionTitle>
-      <Pricing />
+      <div id="pricing">
+        <SectionTitle
+          pretitle=""
+          title="Pricing Plans"
+        >
+          Choose the plan that fits your needs
+        </SectionTitle>
+        <Pricing />  
+      </div>
+ 
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs">
