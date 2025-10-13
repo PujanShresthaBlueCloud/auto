@@ -12,12 +12,12 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumy.",
   image: benefitOneImg,
   bullets: [
     {
       title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       icon: <EmojiHappyIcon />,
     },
     {
@@ -35,22 +35,22 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry  also contain an image or Illustration as above section along with some bullet points..",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Faster Processes",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       icon: <DeviceMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "24/7 Operation",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       icon: <AdjustmentsIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Increased Output",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       icon: <SunIcon />,
     },
   ],
