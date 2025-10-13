@@ -11,6 +11,7 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Pricing from "../components/pricing";
 
 //import dynamic from "next/dynamic";
 
@@ -28,10 +29,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Automation</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Automation"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,14 +40,19 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Automation Benefits"
+        title=" Why should you automate everything">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <SectionTitle
+        pretitle=""
+        title="Pricing Plans"
+        id="pricing">
+        Choose the plan that fits your needs
+      </SectionTitle>
+      <Pricing />
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs">
@@ -66,8 +72,10 @@ export default function Home() {
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
-      <Faq />
-      <Cta />
+      <div id="faq">
+        <Faq />
+      </div>
+      {/* <Cta /> */}
       <Footer />
       <PopupWidget />
     </>
