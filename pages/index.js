@@ -12,6 +12,7 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import Pricing from "../components/pricing";
+import ChatWidget from "../components/chatbot";
 
 //import dynamic from "next/dynamic";
 
@@ -80,7 +81,7 @@ export default function Home() {
       </div>
       {/* <Cta /> */}
       <Footer />
-      <PopupWidget />
+      <ChatWidget/>
     </>
   );
 }
