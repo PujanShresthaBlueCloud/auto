@@ -184,16 +184,39 @@ Integration notes:
 
 
 // App.tsx
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
+// import '@n8n/chat/style.css';
+// import { createChat } from '@n8n/chat';
+
+// export const Chatbot = () => {
+// 	useEffect(() => {
+// 		createChat({
+// 			webhookUrl: 'http://localhost:5678/webhook/f65d7236-83a7-4ab0-b0d8-755846675f8c/chat'
+// 		});
+// 	}, []);
+
+// 	return (<div></div>);
+// };
+
+
+import dynamic from 'next/dynamic';
 import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
 
-export const ChatWidget = () => {
-	useEffect(() => {
-		createChat({
-			webhookUrl: 'http://localhost:5678/webhook/f65d7236-83a7-4ab0-b0d8-755846675f8c/chat'
-		});
-	}, []);
+// Wrap your chat initialization in a component
+const ChatbotClient = () => {
+  // This runs only in the browser
+  React.useEffect(() => {
+    import('@n8n/chat').then(({ createChat }) => {
+      createChat({
+        webhookUrl: 'http://localhost:5678/webhook/f65d7236-83a7-4ab0-b0d8-755846675f8c/chat',
+      });
+    });
+  }, []);
 
-	return (<div></div>);
+  return <div id="n8n-chat-root" />; // Ensure a container div exists
 };
+
+// Dynamically import it with SSR disabled
+const Chatbot = dynamic(() => Promise.resolve(ChatbotClient), { ssr: false });
+
+export default Chatbot;
