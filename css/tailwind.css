@@ -14,11 +14,14 @@
     font-family: 'Roboto', 'Open Sans', sans-serif;
   }
 
+  /* Custom textarea style */
   #chat-input {
     @apply bg-black text-white border border-gray-700 rounded-lg p-2;
   }
 
+  /* Focus with manual box-shadow (teal-ish rgba) */
   #chat-input:focus {
-    @apply outline-none ring-2 ring-teal-400;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.18); /* teal-400 ~ #2dd4bf */
   }
 }
