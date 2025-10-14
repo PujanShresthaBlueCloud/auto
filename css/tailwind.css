@@ -17,7 +17,12 @@
   /* Custom textarea style */
   #chat-input {
     --chat--input--text-color: black; /* define custom CSS variable */
-    @apply bg-white text-[var(--chat--input--text-color)] border border-gray-700 rounded-lg p-2;
+
+    /* Tailwind utilities first */
+    @apply bg-white border border-gray-700 rounded-lg p-2;
+
+    /* Then use the CSS variable directly (outside of @apply) */
+    color: var(--chat--input--text-color);
   }
 
   /* Focus with manual box-shadow (teal-ish rgba) */
