@@ -16,7 +16,7 @@
 
   /* Custom textarea style */
   #chat-input {
-    @apply bg-black text-black border border-gray-700 rounded-lg p-2;
+    @apply bg-white text-black border border-gray-700 rounded-lg p-2;
   }
 
   /* Focus with manual box-shadow (teal-ish rgba) */
