@@ -16,12 +16,13 @@
 
   /* Custom textarea style */
   #chat-input {
-    @apply bg-white text-black border border-gray-700 rounded-lg p-2;
+    --chat--input--text-color: black; /* define custom CSS variable */
+    @apply bg-white text-[var(--chat--input--text-color)] border border-gray-700 rounded-lg p-2;
   }
 
   /* Focus with manual box-shadow (teal-ish rgba) */
-  #chat-input:focus {
+  /* #chat-input:focus {
     outline: none;
     box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.18); /* teal-400 ~ #2dd4bf */
-  }
+  } */
 }
