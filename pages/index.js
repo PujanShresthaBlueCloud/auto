@@ -81,7 +81,7 @@ export default function Home() {
       </div>
       {/* <Cta /> */}
       <Footer />
-      <ChatWidget/>
+      <ChatWidget />
     </>
   );
 }
