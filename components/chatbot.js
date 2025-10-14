@@ -318,7 +318,7 @@ const ChatWidgetClient = ({ webhookUrl }) => {
     <div>
       {/* Floating button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button
+        {/* <button
           aria-label={open ? "Close chat" : "Open chat"}
           onClick={() => setOpen((v) => !v)}
           className="relative inline-flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:outline-none"
@@ -347,7 +347,7 @@ const ChatWidgetClient = ({ webhookUrl }) => {
               {unread}
             </span>
           )}
-        </button>
+        </button> */}
       </div>
 
       {/* Chat panel */}
