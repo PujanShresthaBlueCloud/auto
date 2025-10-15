@@ -1,3 +1,4 @@
+import image from "next/image";
 import {
   EmojiHappyIcon,
   ChartSquareBarIcon,
@@ -9,13 +10,20 @@ import {
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
-import benefitThreeImg from "../public/img/benefit-three.png";
+// import benefitThreeImg from "../public/img/benefit-three.png";
 
 const benefitOne = {
   title: "Highlight your benefits",
   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumy.",
   // image: benefitOneImg,
-  image: benefitThreeImg,
+  image: (
+    <image
+      src="../public/img/benefit-three.png"
+      alt="Benefit Illustration"
+      width={400}
+      height={300}
+  />
+  ),
   bullets: [
     {
       title: "Understand your customers",
