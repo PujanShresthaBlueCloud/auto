@@ -10,7 +10,7 @@ import {
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
-// import benefitThreeImg from "../public/img/benefit-three.png";
+import benefitThreeImg from "../public/img/benefit-three.png";
 
 const benefitOne = {
   title: "Highlight your benefits",
@@ -18,7 +18,7 @@ const benefitOne = {
   // image: benefitOneImg,
   image: (
     <image
-      src="../public/img/benefit-three.png"
+      src={benefitThreeImg}
       alt="Benefit Illustration"
       width={400}
       height={300}
