@@ -9,11 +9,13 @@ import {
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitThreeImg from "../public/img/benefit-three.png";
 
 const benefitOne = {
   title: "Highlight your benefits",
   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumy.",
-  image: benefitOneImg,
+  // image: benefitOneImg,
+  image: benefitThreeImg,
   bullets: [
     {
       title: "Understand your customers",
