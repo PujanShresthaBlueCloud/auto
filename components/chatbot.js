@@ -231,7 +231,8 @@ const initN8nChat = () => {
   if (typeof window === "undefined") return;
   import("@n8n/chat").then(({ createChat }) => {
     createChat({ 
-        webhookUrl: 'http://localhost:5678/webhook/f65d7236-83a7-4ab0-b0d8-755846675f8c/chat'
+        // webhookUrl: 'http://localhost:5678/webhook/f65d7236-83a7-4ab0-b0d8-755846675f8c/chat'
+        webhookUrl: 'https://n8n.srv1065742.hstgr.cloud/webhook/7f64396e-2727-45b9-a2d9-99a373bc7b98/chat'
     });
   });
 };
